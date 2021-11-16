@@ -1,0 +1,41 @@
+{
+  "name": "hackercode",
+  "version": "1.1.2",
+  "description": "Timnik",
+  "main": "main.js",
+  "licenses": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nottimnik/HackerCode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nottimnik/HackerCode/issues"
+  },
+  "homepage": "https://github.com/nottimnik/HackerCode#readme",
+  "devDependencies": {
+    "electron": "^16.0.0",
+    "electron-builder": "^22.13.1",
+    "electron-reloader": "^1.2.1"
+  },
+  "build": {
+    "appId": "com.timnik.hackercode",
+    "productName": "Hacker Code",
+    "directories": {
+      "output": "build"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    }
+  }
+}
